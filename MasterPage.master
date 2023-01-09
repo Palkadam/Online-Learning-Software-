@@ -1,0 +1,82 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+        </asp:ContentPlaceHolder>
+    </title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <link href="stylesheet/StyleSheet.css" rel="stylesheet" type="text/css" />
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div id="header">
+                <div id="Div1">
+                    <asp:ImageButton ID="ImageButton1" runat="server" Height="43px"
+                        Width="76px" ImageUrl="~/images/IMAGES.png" PostBackUrl="~/Default.aspx" />
+                    &nbsp;&nbsp;&nbsp;&nbsp;<asp:LinkButton
+                        ID="LinkButton1" runat="server" PostBackUrl="~/login.aspx">Log-In</asp:LinkButton>
+                    &nbsp;/
+         <asp:LinkButton ID="LinkButton2" runat="server" Text="Sign-up" PostBackUrl="~/signup.aspx"></asp:LinkButton>
+                    &nbsp;
+                </div>
+                <div id="Div2">
+                    <asp:LinkButton ID="LinkButton3" runat="server" Font-Bold="True"
+                        Font-Names="Comic Sans MS" Font-Size="XX-Large" ForeColor="#003300"
+                        PostBackUrl="~/Default.aspx">Healthy Nutrition</asp:LinkButton>
+                    &nbsp;
+                </div>
+                <div id="Div3">
+                    <asp:Label ID="Label10" runat="server" Text="Fallow"></asp:Label>
+                    &nbsp;&nbsp;&nbsp;
+           <asp:ImageButton ID="ImageButton2" runat="server" Height="30px" Width="30px"
+               ImageUrl="~/images/whatsapp.png" />
+                    <asp:ImageButton ID="ImageButton3" runat="server" Height="30px" Width="30px"
+                        ImageUrl="~/images/facebook.png" />
+                    <asp:ImageButton ID="ImageButton4" runat="server" Height="30px" Width="30px"
+                        ImageUrl="~/images/insta.png" />
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Label ID="Label11" runat="server" Text="Search"></asp:Label>
+                    &nbsp;<asp:ImageButton ID="ImageButton5" runat="server" Height="30px"
+                        Width="30px" ImageUrl="~/images/search.png" />
+                    &nbsp;
+                </div>
+
+            </div>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+
+
+
+            <div id="footer">
+
+                <ul id="menu">
+                    <li><a href="Default.aspx">HOME  ||</a></li>
+                    <li><a href="blog.aspx">BLOG  ||</a></li>
+                    <li><a href="login.aspx">LOG-IN  ||</a></li>
+                    <li><a href="aboutus.aspx">ABOUT US  ||</a></li>
+                </ul>
+
+                <br />
+                <br />
+
+                <asp:Label ID="Label6" runat="server"
+                    Text="Fast, Food, Casual food, Certified with ISO 1992 / 2020."></asp:Label>
+                <br />
+                <asp:Label ID="Label7" runat="server" Text="&amp;copy, Copyright. All Reserved"></asp:Label>
+                <br />
+                <asp:Label ID="Label8" runat="server" Text="Created & Design By: Pallavi Kadam//"></asp:Label>
+            </div>
+
+
+        </div>
+    </form>
+</body>
+</html>
